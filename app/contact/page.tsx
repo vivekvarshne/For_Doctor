@@ -53,14 +53,15 @@ export default function Contact() {
       >
         Contact Us
       </motion.h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
+      <div className="flex flex-col justify-center align-center">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h2 className="text-2xl font-serif mb-4">Get in Touch</h2>
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">Preferred Contact Method</label>
               <div className="flex space-x-4">
@@ -152,7 +153,7 @@ export default function Contact() {
             >
               Send Message
             </button>
-          </form>
+          </form> */}
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
